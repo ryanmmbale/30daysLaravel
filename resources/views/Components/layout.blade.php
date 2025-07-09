@@ -9,10 +9,10 @@
 </head>
 <body>
 <nav>
-    <a href="{{route('home')}}">Home</a>
-    <a href="{{route('about')}}">About</a>
-    <a href="{{route('contact')}}">Contact</a>
+    <x-nav href="/">Home</x-nav>
+    <x-nav href="/contact">Contact</x-nav>
+    <x-nav href="/about">About</x-nav>
 </nav>
-
+  {{$slot}}
 </body>
 </html>
