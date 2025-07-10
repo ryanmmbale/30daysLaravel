@@ -27,9 +27,9 @@
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
 
-                <a href="/" class="text-sm/6 font-semibold text-gray-900">Home</a>
-                <a href="/about" class="text-sm/6 font-semibold text-gray-900">About</a>
-                <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact</a>
+                <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+                <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
+                <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
